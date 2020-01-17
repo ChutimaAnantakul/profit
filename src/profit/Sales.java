@@ -1,7 +1,7 @@
 package profit;
 
 public class Sales {
-	public double sale;
+	public double sale ;
 	public Sales() {
 		
 	}
@@ -11,3 +11,6 @@ public class Sales {
 	
 
 }
+
+
+

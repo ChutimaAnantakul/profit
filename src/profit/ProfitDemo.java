@@ -1,10 +1,14 @@
 package profit;
-
 import java.util.Scanner;
+
+
+
 import java.util.ArrayList;
 
-public class ProfitDemo {
 
+public class ProfitDemo {
+		
+		
 		// TODO Auto-generated method stub
 		static Scanner in = new Scanner(System.in);
 		static ArrayList<Employee>em = new ArrayList<Employee>();
@@ -66,7 +70,7 @@ public class ProfitDemo {
 					System.out.println("Please enter sale: ");
 					sale = in.nextDouble();
 					sales.add(new Sales(sale));
-				}
+				} 
 			}
 			System.out.println("Do you want to save salary [Y/N]");
 			insa = in.next().charAt(0);

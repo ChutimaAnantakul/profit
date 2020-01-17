@@ -1,5 +1,4 @@
 package profit;
-
 public class Salary {
 
 	public double salary;
@@ -31,7 +30,7 @@ public class Salary {
 		commission = salary + agent;
 	}
 	public String toString() {
-		return " "+commission;
+		return "    " +commission ;
 	}
 	
 
