@@ -16,17 +16,18 @@ public class Salary {
 	public double getAmount() {
 		return salary;
 	}
-	public double calAgent() {
+	public void calAgent() {
 		if(sales>=50001) {
-			agent = sales*(100/3);
+			agent = ((sales/100)*3);
 		}else if(sales >= 25001) {
-			agent = sales*(100/2);
+			agent = ((sales/100)*2);
 		}else if(sales >= 1) {
-			agent = sales*(100/1);
+			agent = ((sales/100)*1);
 		}
-		return agent;
+		
 	}
 	public void calCommission() {
+		
 		commission = salary + agent;
 	}
 	public String toString() {

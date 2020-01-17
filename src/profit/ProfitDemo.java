@@ -75,6 +75,7 @@ public class ProfitDemo {
 		}
 	public static void Displays() {
 		for (int i = 0; i < sa.size(); i++) {
+			sa.get(i).calCommission();
 			System.out.println(sa.get(i).toString());
 		}
 	}
