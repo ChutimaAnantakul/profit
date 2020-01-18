@@ -9,6 +9,7 @@ public class Employee {
 	}
 	
 	public Employee(String n, String id) {
+		
 		this.name = n;
 		this.emp_id = id;
 	}

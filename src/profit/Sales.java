@@ -5,11 +5,16 @@ public class Sales {
 	
 	public Sales() {	
 	}
+	
 	public Sales(double sale) {
 		this.sale = sale;
 	}
+	
 	public double getSale() {
 		return sale;
 	}
 	
 }
+
+
+

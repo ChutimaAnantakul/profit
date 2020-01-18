@@ -1,5 +1,4 @@
 package profit;
-
 public class Salary {
 	public Sales sales;
 	public double salary;
@@ -30,7 +29,7 @@ public class Salary {
 	}
 	
 	public String toString() {
-		return " "+commission;
+		return "    " +commission ;
 	}
 	
 }
