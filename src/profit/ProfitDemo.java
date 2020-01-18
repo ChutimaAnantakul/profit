@@ -1,7 +1,7 @@
 package profit;
 
-import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class ProfitDemo {
 
@@ -12,8 +12,8 @@ public class ProfitDemo {
 		static ArrayList<Sales>sales = new ArrayList<Sales>();
 		public static void main(String[] args) {
 		int ch;
-		char id, nam, ye;
-		double sale, sal;
+		char ye;
+		
 		do {
 			System.out.println("Please select Menu");
 			System.out.println("[1] Add Employee");
@@ -27,7 +27,7 @@ public class ProfitDemo {
 				insertSales();
 				}
 			if(ch == 3) { 
-				Displays();
+				Displays(sa, sales);
 				}
 			System.out.println("Do you want to select menu [Y/N]");
 			ye = in.next().charAt(0);
@@ -73,13 +73,15 @@ public class ProfitDemo {
 			}while(insa == 'y');
 				
 		}
-	public static void Displays() {
+	public static void Displays( ArrayList<Salary>sa, ArrayList<Sales>sales) {
 		for (int i = 0; i < sa.size(); i++) {
-			sa.get(i).calCommission();
-			System.out.println(sa.get(i).toString());
+			double com = sa.get(i).calCommission(sales.get(i).getSale(), sa.get(i).getAmount());
+			System.out.println(" "+em.get(i).getName()+" "+com);
 		}
+		
 	}
 }
+
 	
 	
 

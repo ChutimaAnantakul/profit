@@ -4,9 +4,10 @@ public class Employee {
 	public String name;
 	public String emp_id;
 	public Salary salary;
-	public Employee() {
-		
+	
+	public Employee() {	
 	}
+	
 	public Employee(String n, String id) {
 		this.name = n;
 		this.emp_id = id;
@@ -18,7 +19,7 @@ public class Employee {
 		return name;
 	}
 	public String toString() {
-		return " "+emp_id+" "+name;
+		return " "+emp_id;
 	}
 	
 
