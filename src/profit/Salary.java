@@ -15,14 +15,17 @@ public class Salary {
 	}
 
 	public double calCommission(double sale, double salary) {
-		if(sale>=100001) {
+		if(sale>=50001) {
 			agent = (sale*(3.0/100));
 			commission = salary + agent;
-		}else if(sale >= 50001) {
+		}else if(sale >= 25001) {
 			agent = (sale*(2.0/100));
 			commission = salary + agent;
-		}else if(sale >= 1) {
+		}else if(sale >= 18001) {
 			agent = (sale*(1.0/100));
+			commission = salary + agent;
+		}else if(sale >= 1) {
+			agent = (18000*(1.0/100));
 			commission = salary + agent;
 		}
 		return commission;
