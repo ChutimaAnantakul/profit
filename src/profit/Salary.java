@@ -21,12 +21,11 @@ public class Salary {
 		}else if(sale >= 25001) {
 			agent = (sale*(2.0/100));
 			commission = salary + agent;
-		}else if(sale >= 18001) {
+		}else if(sale >= 1) {
 			agent = (sale*(1.0/100));
 			commission = salary + agent;
-		}else if(sale >= 1) {
-			agent = (18000*(1.0/100));
-			commission = salary + agent;
+		}if(commission < 18000) {
+			commission = 18000;
 		}
 		return commission;
 	}
