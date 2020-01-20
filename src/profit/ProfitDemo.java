@@ -19,6 +19,8 @@ public class ProfitDemo {
 			System.out.println("[1] Add Employee");
 			System.out.println("[2] Save Sales");
 			System.out.println("[3] Display");
+			System.out.println();
+			System.out.println("select Menu : ");
 			ch = in.nextInt();
 			if(ch == 1) {
 				addSalay();
@@ -76,7 +78,7 @@ public class ProfitDemo {
 	public static void Displays( ArrayList<Salary>sa, ArrayList<Sales>sales) {
 		for (int i = 0; i < sa.size(); i++) {
 			double com = sa.get(i).calCommission(sales.get(i).getSale(), sa.get(i).getAmount());
-			System.out.println(" "+em.get(i).getName()+" "+com);
+			System.out.println(" Employee Name = "+em.get(i).getName()+" ,Commission = "+com);
 		}
 		
 	}
